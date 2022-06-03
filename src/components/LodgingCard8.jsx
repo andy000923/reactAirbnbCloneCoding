@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/lodgingCard.css";
 import { useNavigate } from "react-router-dom";
-import  Carousel  from "../components/Carousel";
+import  Carousel  from "./Carousel";
 
 const imgs = [
     "https://a0.muscache.com/im/pictures/miso/Hosting-9211435/original/c2d9cc72-535e-4e11-8725-8848f584a443.jpeg?im_w=720",

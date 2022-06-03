@@ -5,6 +5,12 @@ import  Carousel  from "../components/Carousel";
 
 const imgs = [
     "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/3d966c94-4c87-479b-8eeb-4889e9fb6ac9.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/9d4c4d58-b9e6-4a2d-9883-eb2df68c0ba0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/3c44f9fd-0a88-41dd-acb5-ebf58bde739f.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/39cdf5aa-a5d6-4f55-893c-73bf310dd598.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/9f680175-524d-47f7-9814-a88b9bc42096.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/4e9d046b-0499-4d12-ada5-401fa81102da.jpeg?im_w=720",
 ];
 const LodgingCard1 = (props) => {
     const { id } = props;
@@ -17,6 +23,7 @@ const LodgingCard1 = (props) => {
             //     navigate(`/product/${id}`);
             // }}>
         >
+
             <Carousel images={imgs} />
             <div className="article-contents">
                 <strong>Terrasini, 이탈리아</strong>

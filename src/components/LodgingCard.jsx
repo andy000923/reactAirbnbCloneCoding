@@ -5,6 +5,12 @@ import  Carousel  from "../components/Carousel";
 
 const imgs = [
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/944d56fa-e9a6-48fb-a9c5-e4e3778042d7?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/622a7f24-1a55-4468-82b5-fb3abc83020f?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/68e860ea-a095-4651-b911-0394d9844316?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/5b038cc8-222e-43ba-8aef-187efe91e787?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/9e8d63dc-a594-4364-9be4-daf83610fd8c?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/50792eb2-a43e-4dde-8410-8eda79fa94ae?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/620f8ead-9c72-4471-bbf7-06d369ca6587?im_w=720",
 ];
 const LodgingCard = (props) => {
     const { id } = props;

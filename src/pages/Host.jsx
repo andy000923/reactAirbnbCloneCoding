@@ -40,10 +40,7 @@ const Host = () => {
                 </div>
                 <div>
                     <video width="100%" height="100%" autoPlay loop>
-                        <source
-                            src="https://a0.muscache.com/v/a9/a7/a9a7873c-95de-5e37-8995-a5abb5b6b02f/a9a7873c95de5e378995a5abb5b6b02f_4000k_1.mp4?imformat=h265"
-                            type="video/mp4; codecs=hevc"
-                        />
+                        
                         <source
                             src="https://a0.muscache.com/v/a9/a7/a9a7873c-95de-5e37-8995-a5abb5b6b02f/a9a7873c95de5e378995a5abb5b6b02f_4000k_1.mp4"
                             type="video/mp4"
@@ -121,7 +118,7 @@ const Host = () => {
             <div className="hosting-map-container">
                 <h3>숙소를 소개해주세요</h3>
                 <div>
-                    <img src={airmap}  />
+                    <img src={airmap}/>
                 </div>
                 <div className="hosting-map-bottom-btn">
                     *<button>에어비앤비가 예상 수입을 산정하는 방법</button>
@@ -206,10 +203,7 @@ const Host = () => {
             <div className="hosting-start-container">
                 <div>
                     <video width="100%" height="100%" autoPlay loop>
-                        <source
-                            src="https://a0.muscache.com/v/9a/7a/9a7ad4a1-cfab-5f7d-96e6-fda8abceabe7/9a7ad4a1cfab5f7d96e6fda8abceabe7_4000k_1.mp4?imformat=h265"
-                            type="video/mp4; codecs=hevc"
-                        />
+                        
                         <source
                             src="https://a0.muscache.com/v/9a/7a/9a7ad4a1-cfab-5f7d-96e6-fda8abceabe7/9a7ad4a1cfab5f7d96e6fda8abceabe7_4000k_1.mp4"
                             type="video/mp4"
