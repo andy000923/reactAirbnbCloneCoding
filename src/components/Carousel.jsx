@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef, Fragment } from "react";
 import "../css/carousel.css";
 import leftArrow from "../imgs/leftArrow.png";
 import rightArrow from "../imgs/rightArrow.png";
-import LikeButton from "./LikeButton";
-import RedLikeButton from "./RedLikeButton";
 import Counter from "./Counter";
+import { useSelector, useDispatch } from 'react-redux';
+
 const Carousel = (props) => {
     const { images } = props;
     const ref = useRef();
@@ -28,7 +28,7 @@ const Carousel = (props) => {
             (-width / images.length) * curSlide
         }px)`;
     }, [curSlide]);
-
+    
     return (
         <div className="carousel-wrap">
             <div

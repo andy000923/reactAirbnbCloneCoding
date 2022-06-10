@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LikeButton from "./LikeButton";
 import RedLikeButton from "./RedLikeButton";
+import { useSelector, useDispatch } from 'react-redux';
 const Counter = () => {
     const [count, setCount] = useState(0);
 

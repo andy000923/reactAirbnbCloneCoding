@@ -1,45 +1,3 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  .body{
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    font-weight: bold;
-  }
   #main-page{
     background-size: cover;
     height: 80vh;
@@ -53,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 80px;
+    border-bottom:1px solid #cccccc;
   }
   
   .main-navi .logo {
@@ -124,19 +83,26 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   
-  #category-container {
-    padding:24px 80px;
+  .memberInfoContainer>div{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #category {
-    display:flex;
-    align-items: center;
-    overflow: auto;
-  }
-  
+    flex-direction: column;
+}
+.memberInfoContainer>div>button{
+    all:unset;
+    padding: 16px;
+}
+.memberInfoContainer>div>button:hover{
+    background-color: #eeeeee;
+}
+
+#category-container {
+  padding:24px 80px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
   #main {
     padding:0px 80px;
     display:grid;
@@ -174,7 +140,31 @@
     background-color: #ddd;
     cursor: pointer;
   }
-  
+  .show-map-btn-container{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:100px;
+}
+.show-map-btn-container>button{
+    all:unset;
+    background-color: black;
+    border-radius: 24px;
+}
+.show-map-btn-container>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.show-map-btn-container>button>div{
+    color:white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding:14px 19px;
+}
   #footer .grid {
     display: grid;
     grid-template-columns: 1fr 20fr 10fr;
@@ -183,5 +173,73 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
+    height: 70px;
   }
-  
+  @media (max-width: 1480px){
+    #main {
+      padding:0px 80px;
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 20px;
+      row-gap:40px;
+    }
+  }
+  @media (max-width: 900px){
+    #main {
+      padding:0px 80px;
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 20px;
+      row-gap:40px;
+    }
+    #main-page .main-navi .logo a{
+      display: none;
+    }
+    #main-page .main-navi .menu{
+      display: none;
+    }
+    #main-page .main-navi .search .button{
+      display: none;
+    }
+    #main-page .main-navi .search1 .button{
+      display: flex;
+    }
+  }
+  @media (max-width: 650px){
+    #main {
+      padding:0px 80px;
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 20px;
+      row-gap:40px;
+    }
+    #main-page .main-navi .logo a{
+      display: none;
+    }
+    #main-page .main-navi .menu{
+      display: none;
+    }
+    #main-page .main-navi .search .button{
+      display: none;
+    }
+    #main-page .main-navi .search1 .button{
+      display: flex;
+      width: 350px;
+    }
+  }
+  .main-navi .search1 .button {
+    height: 48px;
+    width: 500px;
+    border-radius: 30px;
+    padding: 0 15px;
+    display: none;
+    column-gap: 10px;
+    align-items: center;
+    left: 50%;
+    transform: translateX(0%);
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+    box-shadow: 0px 2px 3px grey;
+  }

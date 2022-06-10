@@ -2,7 +2,7 @@ import React from "react";
 import "../css/lodgingCard.css";
 import { useNavigate } from "react-router-dom";
 import  Carousel  from "../components/Carousel";
-
+import { Provider, useSelector, useDispatch } from 'react-redux';
 const imgs = [
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/944d56fa-e9a6-48fb-a9c5-e4e3778042d7?im_w=720",
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/622a7f24-1a55-4468-82b5-fb3abc83020f?im_w=720",
@@ -12,10 +12,9 @@ const imgs = [
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/50792eb2-a43e-4dde-8410-8eda79fa94ae?im_w=720",
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/620f8ead-9c72-4471-bbf7-06d369ca6587?im_w=720",
 ];
-const LodgingCard = (props) => {
-    const { id } = props;
-    const navigate = useNavigate();
 
+function LodgingCard () {
+    
     return (
         <article
             className="lodging-article"

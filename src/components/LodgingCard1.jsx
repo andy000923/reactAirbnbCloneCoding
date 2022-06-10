@@ -19,9 +19,9 @@ const LodgingCard1 = (props) => {
     return (
         <article
             className="lodging-article"
-            // onClick={() => {
-            //     navigate(`/product/${id}`);
-            // }}>
+            //onClick={() => {
+              //  navigate(`/product/${id}`);
+            //}}>
         >
 
             <Carousel images={imgs} />
