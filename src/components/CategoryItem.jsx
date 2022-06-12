@@ -13,7 +13,7 @@ const CategoryItem = (props) => {
             
             <button
                 className="category-btn"
-                style={{ left: 70 }}
+                style={{ left: 120}}
                 onClick>
                 <img src={leftArrow} alt="arrow" width="20px" height="20px" />
             </button>

@@ -34,7 +34,8 @@ const Carousel = (props) => {
             <div
                 className="carousel-container"
                 ref={ref}
-                style={{ width: `${images.length * 100}%` }}>
+                style={{ width: `${images.length * 100}%` }}
+                >
                 {images.map((data, idx) => (
                     <div key={idx} className="carousel-image-view">
                         <div

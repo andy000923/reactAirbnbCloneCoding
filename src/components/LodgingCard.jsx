@@ -13,17 +13,16 @@ const imgs = [
     "https://a0.muscache.com/im/pictures/monet/Select-34444025/original/620f8ead-9c72-4471-bbf7-06d369ca6587?im_w=720",
 ];
 
-function LodgingCard () {
-    
+function LodgingCard (props) {
+    const navigate = useNavigate();
     return (
         <article
-            className="lodging-article"
-            // onClick={() => {
-            //     navigate(`/product/${id}`);
-            // }}>
-        >
-            <Carousel images={imgs} />
-            <div className="article-contents">
+            className="lodging-article">       
+            <Carousel images ={imgs} />
+            <div className="article-contents"
+            onClick={() => {
+            navigate(`/product`);
+            }}>
                 <strong>Raelingen, 노르웨이</strong>
                 <span>Venuereport에 소개</span>
                 <span>10월 9일~14일</span>

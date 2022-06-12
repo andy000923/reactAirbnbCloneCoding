@@ -162,9 +162,7 @@ const category_img2 = [
                                 <i className="fas fa-bars" />
                                 <i className="fas fa-user-circle" />
                             </button>
-                            
                         </div>
-                        <div />
                     </nav>
                     <div id="category-container">   
                         {category_list.map((data, idx) => (
@@ -286,8 +284,8 @@ const category_img2 = [
                 width={500}
             />
                     <div id="main">              
-                        <LodgingCard />
                         <LodgingCard1 />
+                        <LodgingCard />
                         <LodgingCard2 />
                         <LodgingCard3 />
                         <LodgingCard4 />
@@ -295,8 +293,7 @@ const category_img2 = [
                         <LodgingCard6 />
                         <LodgingCard7 />
                         <LodgingCard8 />
-                    </div>
-                
+                    </div>                
                 </main>
                 <footer id="footer">
                     <div className="grid">

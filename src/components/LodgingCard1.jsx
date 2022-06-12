@@ -13,16 +13,16 @@ const imgs = [
     "https://a0.muscache.com/im/pictures/miso/Hosting-45465864/original/4e9d046b-0499-4d12-ada5-401fa81102da.jpeg?im_w=720",
 ];
 const LodgingCard1 = (props) => {
-    const { id } = props;
+    
     const navigate = useNavigate();
 
     return (
         <article
             className="lodging-article"
-            //onClick={() => {
-              //  navigate(`/product/${id}`);
-            //}}>
-        >
+            onClick={() => {
+            navigate(`/product`);
+            }}>
+        
 
             <Carousel images={imgs} />
             <div className="article-contents">
